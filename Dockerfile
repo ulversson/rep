@@ -37,7 +37,8 @@ RUN chown -R hypothesis:hypothesis /var/log/nginx /var/lib/nginx /var/tmp/nginx
 
 # Copy nginx config
 COPY conf/nginx.conf /etc/nginx/nginx.conf
-
+COPY conf/fullchain.pem /etc/nginx/fullchain.pem
+COPY conf/privkey.pem /etc/nginx/privkey.pem
 # Copy collectd config
 COPY conf/collectd.conf /etc/collectd/collectd.conf
 RUN mkdir /etc/collectd/collectd.conf.d \

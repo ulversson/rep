@@ -136,7 +136,7 @@ run-docker:
 		-e "CLIENT_OAUTH_ID" \
 		-e "CLIENT_URL=http://localhost:3001/hypothesis" \
 		-e "DATABASE_URL=postgresql://postgres@postgres/postgres" \
-		-e "ELASTICSEARCH_URL=http://elasticsearch:9200" \
+		-e "ELASTICSEARCH_URL=https://search.my-hive.uk" \
 		-e "NEW_RELIC_APP_NAME=h (dev)" \
 		-e "NEW_RELIC_LICENSE_KEY" \
 		-e "SECRET_KEY=notasecret" \
